@@ -112,7 +112,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
  */
 function repeatString(value, count) {
   let str = '';
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < count; i += 1) {
     str += value;
   }
   return str;
@@ -208,7 +208,7 @@ function extractEmails(str) {
  *
  */
 function getRectangleString(/* width, height */) {
-// throw new Error('Not implemented');
+  throw new Error('Not implemented');
 }
 
 
@@ -265,7 +265,7 @@ function encodeToRot13(str) {
   let su = '';
   const str1 = [];
 
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < len; i += 1) {
     if (str2[i] === 'a') {
       if (str[i] === str[i].toUpperCase()) {
         str1[i] = abc.a.toUpperCase();
@@ -444,9 +444,13 @@ function encodeToRot13(str) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(value) {
-  // throw new Error('Not implemented');
-  return (typeof value === 'string');
+function isString(/* value */) {
+  throw new Error('Not implemented');
+  // if (value === 'new String('test')') {
+  //   return true;
+  // } else {
+  //   return (typeof value === 'string');
+  // }
 }
 
 
