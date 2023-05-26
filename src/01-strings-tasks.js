@@ -219,7 +219,7 @@ return str.split( ";" );
  *
  */
 function getRectangleString( width, height ) {
-  //throw new Error('Not implemented');
+throw new Error('Not implemented');
   
 }
 
@@ -240,9 +240,215 @@ function getRectangleString( width, height ) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(/* str */) {
-  throw new Error('Not implemented');
-}
+function encodeToRot13( str ) {
+ // throw new Error('Not implemented');
+let abc = {
+  "a": "n",
+  "b": "o",
+  "c": "p",
+  "d": "q",
+  "e": "r",
+  "f": "s",
+  "g": "t",
+  "h": "u",
+  "i": "v",
+  "j": "w",
+  "k": "x",
+  "l": "y",
+  "m": "z",
+  "n": "a",
+  "o": "b",
+  "p": "c",
+  "q": "d",
+  "r": "e",
+  "s": "f",
+  "t": "g",
+  "u": "h",
+  "v": "i",
+  "w": "j",
+  "x": "k",
+  "y": "l",
+  "z": "m"
+};
+
+let str2 = str.toLowerCase();
+let len = str2.length;
+
+let su = "";
+let str1 = [];
+
+for ( let i = 0 ; i < len ; i++ ) {
+  if( str2[ i ] === "a" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.a.toUpperCase();
+    }else{
+      str1[ i ] = abc.a;
+    };
+  } else if( str2[ i ] === "b" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.b.toUpperCase();
+    }else{
+      str1[ i ] = abc.b;
+    };
+  } else if( str2[ i ] === "c" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.c.toUpperCase();
+    }else{
+      str1[ i ] = abc.c;
+    };
+  } else if( str2[ i ] === "d" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.d.toUpperCase();
+    }else{
+      str1[ i ] = abc.d;
+    };
+  } else if( str2[ i ] === "e" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.e.toUpperCase();
+    }else{
+      str1[ i ] = abc.e;
+    };  
+  } else if( str2[ i ] === "f" ) {
+      if( str[ i ] ===  str[ i ].toUpperCase() ) {
+        str1[ i ] = abc.f.toUpperCase();
+      }else{
+        str1[ i ] = abc.f;
+      };  
+  } else if( str2[ i ] === "g" ) {
+        if( str[ i ] ===  str[ i ].toUpperCase() ) {
+          str1[ i ] = abc.g.toUpperCase();
+        }else{
+          str1[ i ] = abc.g;
+        };  
+  } else if( str2[ i ] === "h" ) {
+        if( str[ i ] ===  str[ i ].toUpperCase() ) {
+          str1[ i ] = abc.h.toUpperCase();
+        }else{
+          str1[ i ] = abc.h;
+        };  
+  } else if( str2[ i ] === "i" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.i.toUpperCase();
+    }else{
+      str1[ i ] = abc.i;
+    };  
+  } else if( str2[ i ] === "j" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.j.toUpperCase();
+    }else{
+      str1[ i ] = abc.j;
+    };
+  } else if( str2[ i ] === "k" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.k.toUpperCase();
+    }else{
+      str1[ i ] = abc.k;
+    };
+  } else if( str2[ i ] === "m" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.m.toUpperCase();
+    }else{
+      str1[ i ] = abc.m;
+    };  
+  } else if( str2[ i ] === "l" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.l.toUpperCase();
+    }else{
+      str1[ i ] = abc.l;
+    };
+  } else if( str2[ i ] === "n" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.n.toUpperCase();
+    }else{
+      str1[ i ] = abc.n;
+    };
+  } else if( str2[ i ] === "o" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.o.toUpperCase();
+    }else{
+      str1[ i ] = abc.o;
+    };
+  } else if( str2[ i ] === "p" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.p.toUpperCase();
+    }else{
+      str1[ i ] = abc.p;
+    };
+  } else if( str2[ i ] === "q" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.q.toUpperCase();
+    }else{
+      str1[ i ] = abc.q;
+    };
+  } else if( str2[ i ] === "r" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.r.toUpperCase();
+    }else{
+      str1[ i ] = abc.r;
+    };
+  } else if( str2[ i ] === "s" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.s.toUpperCase();
+    }else{
+      str1[ i ] = abc.s;
+    };
+  } else if( str2[ i ] === "t" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.t.toUpperCase();
+    }else{
+      str1[ i ] = abc.t;
+    };
+  } else if( str2[ i ] === "u" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.u.toUpperCase();
+    }else{
+      str1[ i ] = abc.u;
+    };
+  } else if( str2[ i ] === "v" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.v.toUpperCase();
+    }else{
+      str1[ i ] = abc.v;
+    };
+  } else if( str2[ i ] === "w" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.w.toUpperCase();
+    }else{
+      str1[ i ] = abc.w;
+    };
+  } else if( str2[ i ] === "x" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.x.toUpperCase();
+    }else{
+      str1[ i ] = abc.x;
+    };
+  } else if( str2[ i ] === "y" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.y.toUpperCase();
+    }else{
+      str1[ i ] = abc.y;
+    };
+  } else if( str2[ i ] === "z" ) {
+    if( str[ i ] ===  str[ i ].toUpperCase() ) {
+      str1[ i ] = abc.z.toUpperCase();
+    }else{
+      str1[ i ] = abc.z;
+    };
+  }else{
+str1[ i ] = str2[ i ];
+};
+su = su + str1[ i ];
+};
+
+
+// if( str[ 0 ] ===  str[ 0 ].toUpperCase() ) {
+//   return su[ 0 ].toUpperCase() + su.slice( 1 );
+// }else{
+//   return su;
+// };
+
+return su;
+};
 
 /**
  * Returns true if the value is string; otherwise false.
